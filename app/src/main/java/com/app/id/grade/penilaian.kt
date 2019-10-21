@@ -1,7 +1,9 @@
 package com.app.id.grade
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.LayoutInflater
 import kotlinx.android.synthetic.main.activity_penilaian.*
 
 class penilaian : AppCompatActivity() {
@@ -10,7 +12,13 @@ class penilaian : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_penilaian)
 
-        supportActionBar?.title = "Hasil"
+        val actionBar = supportActionBar
+        actionBar?.setDisplayShowCustomEnabled(true)
+
+        val inflator = this.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+        val v = inflator.inflate(R.layout.logo_action, null)
+
+        actionBar?.setCustomView(v)
 
         val a = ambilNilai.getNim
         val b = ambilNilai.getNama

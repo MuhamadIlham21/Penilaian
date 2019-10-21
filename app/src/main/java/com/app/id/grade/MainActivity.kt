@@ -1,9 +1,11 @@
 package com.app.id.grade
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.LayoutInflater
 import android.widget.EditText
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_main.*
@@ -19,7 +21,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        supportActionBar?.title = "Penilaian"
+        val actionBar = supportActionBar
+        actionBar?.setDisplayShowCustomEnabled(true)
+
+        val inflator = this.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+        val v = inflator.inflate(R.layout.logo_action, null)
+
+        actionBar?.setCustomView(v)
 
 
         btnCek.setOnClickListener {
