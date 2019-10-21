@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Grade</string>
+    <string name="nim">NIM</string>
+    <string name="pemberian_nilai_pada_mahasiswa">Pemberian Nilai pada Mahasiswa</string>
+    <string name="nama">Nama</string>
+    <string name="nilai">Nilai</string>
+    <string name="proses">Proses</string>
+    <string name="getnama">getNama</string>
+    <string name="getnim">getNim</string>
+    <string name="getnilai">getNilai</string>
+    <string name="getketerangan">getKeterangan</string>
+    <string name="hasil">Hasil</string>
+    <string name="nim0">NIM :</string>
+    <string name="nama0">Nama :</string>
+    <string name="nilai0">Nilai :</string>
+    <string name="keterangan0">Keterangan :</string>
+    <string name="nim1">NIM</string>
+    <string name="nama1">Nama</string>
+    <string name="nilai1">Nilai</string>
+</resources>
